@@ -1,15 +1,8 @@
-from random import randrange
+from random import choice
 from obesenec import obrazky
 
 def vyber_slovo():
-
-    cislo = randrange(0, 2)
-    if cislo == 0:
-        return 'filoména'
-    elif cislo == 1:
-        return 'mentolka'
-    else:
-        return 'estragon'
+    return choice(["filoména", "mentolka", "estragon"])
 
 def ziskej_pismeno():
     while True:
